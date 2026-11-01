@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.mycompany.main.LoginController"
+            prefWidth="500" prefHeight="400"
+            styleClass="root-pane">
+
+    <VBox alignment="CENTER" spacing="15"
+          AnchorPane.topAnchor="50"
+          AnchorPane.bottomAnchor="50"
+          AnchorPane.leftAnchor="80"
+          AnchorPane.rightAnchor="80">
+
+        <Label text="Student Grades Management System" styleClass="title-label"/>
+        <TextField fx:id="usernameField" promptText="Username"/>
+        <PasswordField fx:id="passwordField" promptText="Password"/>
+        <Button text="Login" onAction="#handleLogin" styleClass="main-button"/>
+        <Label fx:id="messageLabel" styleClass="error-label"/>
+
+    </VBox>
+</AnchorPane>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.mycompany.main.DashboardController"
+            prefWidth="600" prefHeight="450"
+            styleClass="root-pane">
+
+    <VBox alignment="CENTER" spacing="18"
+          AnchorPane.topAnchor="40"
+          AnchorPane.bottomAnchor="40"
+          AnchorPane.leftAnchor="120"
+          AnchorPane.rightAnchor="120">
+
+        <Label fx:id="welcomeLabel"
+               text="Welcome to Dashboard"
+               styleClass="title-label"/>
+
+        <Button disable="true" text="Add Student (not included)" onAction="#openAddStudent" styleClass="main-button"/>
+        <Button disable="true" text="Add Grades (not included)" onAction="#openAddGrades" styleClass="main-button"/>
+        <Button disable="true" text="View Students (not included)" onAction="#openViewStudents" styleClass="main-button"/>
+        <Button disable="true" text="View Reports (not included)" onAction="#openReports" styleClass="main-button"/>
+        <Button text="Logout" onAction="#logout" styleClass="logout-button"/>
+
+    </VBox>
+</AnchorPane>
+
